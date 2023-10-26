@@ -1,0 +1,31 @@
+.main__section--home h3{
+    font-size: 24px;
+}
+
+.main__section__price--home{
+    font-size: 18px;
+}
+
+.main__section__discount--home, .main__section__article--home h4 {
+    font-size: 16px;
+}
+
+
+
+.footer__section--home{
+    text-align: center;
+}
+
+footer .fa-solid{
+    color: var(--colorCeleste);
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.footer__section--home{
+    margin: 45px;
+}
+
+.footer--home{
+    margin-bottom: 20px;
+}

@@ -1,0 +1,48 @@
+.header--home{
+    background-color: var(--colorAmarillo);
+    padding-bottom: 1px;
+}
+
+.header__nav--home img{
+    width: 120px;
+    margin: 28px 20px 10px 30px;
+}
+
+.header__nav--home input{
+    margin-left: 20px;
+    width: 160px;
+    font-size: 12px;
+}
+
+.header__nav--home button{
+    margin-left: 20px;
+}
+
+.header__nav--home p{
+    margin-left: 50px;
+}
+
+.header--home ul{
+    margin-top: 10px;
+}
+
+.header--home ul li{
+    font-size: 12px;
+    text-align: left;
+}
+
+.header--home .burguer-menu{
+    background-color: var(--colorCeleste);
+    color: #ffffff; 
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    border-radius: 5px;
+    margin: 20px 30px 20px 165px;
+}
+
+.header__container--home{
+    text-align: center;
+}
