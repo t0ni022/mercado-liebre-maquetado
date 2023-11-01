@@ -14,6 +14,8 @@
     font-size: 12px;
 }
 
+
+
 .header__nav--home button{
     margin-left: 20px;
 }
@@ -24,11 +26,19 @@
 
 .header--home ul{
     margin-top: 10px;
+    display: none;
 }
 
 .header--home ul li{
     font-size: 12px;
     text-align: left;
+}
+
+.header__container--home{
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 
 .header--home .burguer-menu{
@@ -40,9 +50,14 @@
     justify-content: center;
     align-items: center;    
     border-radius: 5px;
-    margin: 20px 30px 20px 165px;
+    margin: 20px;
 }
 
-.header__container--home{
-    text-align: center;
+@media(min-width: 361px){
+    .header__container--home{
+        display: none;
+    }
+    .header--home ul{
+        display: block;
+    }
 }
