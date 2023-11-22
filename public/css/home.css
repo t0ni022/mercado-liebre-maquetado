@@ -4,7 +4,6 @@
 }
 
 
-
 .main--home--banner{
 width: 100%;
 }
@@ -12,11 +11,18 @@ width: 100%;
 .main__section--home{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 18px;
 }
 
 .main__section__article--home{
     background-color: #ffffff;
+    width: 100%;
+}
+
+.main__section--home--articulos{
+    display: grid;
+    grid-template-columns: auto;
+    gap: 10px;
 }
 
 .main__section__article--home div{
@@ -33,26 +39,44 @@ width: 100%;
     width: 100%;
 }
 
-.main__section__article--home div span{
-    border: 1px solid var(--colorVerde);
-    border-radius: 50%;
+.main__section__article--home div {
+    position: relative;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 40px;
-    width: 40px;
-}
+    flex-wrap: wrap;
+    width: 100%;
+} 
 
 .main__section__price--home{
     font-size: 18px;
+    width: 30%;
 }
 
-.main__section__discount--home, .main__section__article--home h4 {
+.main__section__discount--home{
     font-size: 16px;
+    width: 70%;
 }
 
+ .main__section__article--home h4 {
+    font-size: 16px;
+    width: 100%;
+}
 
-.main__section__discount--home, main .fa-solid{
+.main__section__article--home i{
+    display: block;
+ font-size: 16px;
+ padding: 5px;
+ width: 30px;
+ height: 30px;
+ border: 1px solid var(--colorVerde);
+ background-color: #FFF;
+ border-radius: 50%;
+ position: absolute;
+ right: 20px;
+ top: -15px;
+ color: var(--colorVerde);
+}
+
+.main__section__discount--home{
     color: var(--colorVerde);
 }
 
@@ -79,18 +103,35 @@ footer .fa-solid{
 }
 
 /* tablet */
-
-@media(min-width: 361px){
+/* medidas modificadas para que quede bien acomodado */
+@media(min-width: 530px){
     .main__section__article--home h4{
         display: block;
     }
     .main__section__article--home{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
+
+    .main__section--home--articulos{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 40px;
+    }
 }
 
 /* laptop */
-
-@media(min-width: 768px){
-
+/* medidas modificadas para que quede bien acomodado */
+@media(min-width: 1024px){
+    .main__section--home--articulos{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+     
+    }
+    .main__section__price--home{
+        width: 40%;
+    }
+    
+    .main__section__discount--home{
+        width: 60%;
+    }
 }

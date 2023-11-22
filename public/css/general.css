@@ -17,10 +17,7 @@
 body{
     font-family: var(--tipografiaGeneral);
     background-color: var(--colorGrisclaro);
-}
-
-p{
-    font-size: 12px;
+    
 }
 
 li{
