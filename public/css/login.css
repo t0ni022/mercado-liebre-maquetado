@@ -1,0 +1,43 @@
+.main__section--login{
+    width: 90%;
+    margin: 50px auto;
+}
+
+.main__section__form--login{
+    width: 100%;
+}
+
+.form__contenedor--login{
+    width: 100%;
+    padding-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.form__contenedor--login input{
+    width: 100%;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.form__contenedor--login button{
+    color: #ffffff;
+    background-color: var(--colorCeleste);
+    border: none;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+.form__contenedor--login button a{
+    color: #ffffff;
+}
+
+/* tablet */
+
+@media(min-width:530px){
+    .form__contenedor--login input{
+        width: 50%;
+    }   
+}

@@ -89,13 +89,14 @@ justify-content: center;
         display: block;
     }
     .header__nav__contenedor--home--img{
-        width: 30%;
+        width: 18%;
     }
     .header__nav__contenedor--home--buscador{
-        width: 24%;
+        width: 43%;
     }   
     .header__nav--home p{
-        width: 42%
+        width: 35%;
+        text-align: center;
     }
     .header--home ul{
         margin-top: 10px;

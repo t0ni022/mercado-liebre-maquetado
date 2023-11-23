@@ -1,0 +1,72 @@
+.main__section--register{
+    width: 90%;
+    margin: 50px auto;
+}
+
+.formulario {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.formulario__contenedor{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.formulario__contenedor--nacimiento{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.formulario__contenedor--nacimiento label{
+    width: 100%;
+}
+
+.formulario__caja {
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.formulario--usuario{
+    padding: 10px;
+}
+
+.formulario--intereses{
+    padding: 10px;
+}
+
+.contenedor--boton{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 10px;
+}
+
+.contenedor--boton button{
+    font-size: 16px;
+    border: none;
+    padding: 5px;
+    color: #ffffff;
+    background-color: var(--colorCeleste);
+    border-radius: 5px;
+}
+
+/* color para el link dentro del boton de enviar */
+
+.contenedor--boton button a{
+    color: #ffffff;
+}
+
+/* tablet */
+
+@media(min-width: 530px){
+    .formulario__caja{
+        width: 50%;
+    }
+}

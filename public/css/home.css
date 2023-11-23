@@ -1,6 +1,6 @@
 .main--home{
     width: 90%;
-    margin: 0 auto;
+    margin: 50px auto;
 }
 
 
@@ -9,6 +9,7 @@ width: 100%;
 }
 
 .main__section--home{
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     gap: 18px;
@@ -88,10 +89,15 @@ width: 100%;
     text-align: center;
 }
 
+.footer--home{
+    background-color: #ffffff;
+}
+
 footer .fa-solid{
     color: var(--colorCeleste);
     font-size: 2em;
-    margin-bottom: 10px;
+    padding-top: 30px;
+    padding-bottom: 10px;
 }
 
 .footer__section--home{
