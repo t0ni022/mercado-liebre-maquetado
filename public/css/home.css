@@ -24,6 +24,8 @@ width: 100%;
     display: grid;
     grid-template-columns: auto;
     gap: 10px;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 .main__section__article--home div{
@@ -38,6 +40,7 @@ width: 100%;
 
 .product-img{
     width: 100%;
+    height: auto;
 }
 
 .main__section__article--home div {
@@ -60,6 +63,7 @@ width: 100%;
  .main__section__article--home h4 {
     font-size: 16px;
     width: 100%;
+    color: var(--colorGrisOscuro);
 }
 
 .main__section__article--home i{
@@ -75,6 +79,11 @@ width: 100%;
  right: 20px;
  top: -15px;
  color: var(--colorVerde);
+ transition: all 3s;
+}
+
+.main__section__article--home i:hover{
+ transform: rotate(-90deg);
 }
 
 .main__section__discount--home{
@@ -82,7 +91,9 @@ width: 100%;
 }
 
 .main__section__article--home h4{
-    display: none;
+    height: 0;
+    overflow: hidden;
+    transition: all 3s;
 }
 
 .footer__section--home{
@@ -98,7 +109,10 @@ footer .fa-solid{
     font-size: 2em;
     padding-top: 30px;
     padding-bottom: 10px;
+
 }
+
+
 
 .footer__section--home{
     margin: 45  px;
@@ -111,17 +125,22 @@ footer .fa-solid{
 /* tablet */
 /* medidas modificadas para que quede bien acomodado */
 @media(min-width: 530px){
-    .main__section__article--home h4{
-        display: block;
+    .main__section--home{
+        align-items: flex-start;
     }
-    .main__section__article--home{
+
+    .main__section__article--home :hover h4{
+        height: 20px;
+        transition: all 3s;
+    }
+    .main__section__article--home:hover{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
 
     .main__section--home--articulos{
         display: grid;
         grid-template-columns: auto auto;
-        gap: 40px;
+        gap: 20px;
     }
 }
 
@@ -139,5 +158,20 @@ footer .fa-solid{
     
     .main__section__discount--home{
         width: 60%;
+    }
+
+    .footer--home{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: space-between;
+    }
+
+    .footer__section--home{
+        width: 30%;
+    }
+
+    footer .fa-solid:hover{
+        color: var(--colorAmarillo);
     }
 }
